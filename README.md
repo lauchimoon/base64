@@ -1,8 +1,11 @@
 # base64 encoder and decoder
-- Encoder:
+Encoder
+---
 ```
 $ python3 encode.py "hello world"
 aGVsbG8gd29ybGQ=                  # output
 ```
 
-- Decoder: coming soon
+Decoder
+---
+Coming soon :)
