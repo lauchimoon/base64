@@ -1,7 +1,6 @@
 import sys
 from b64alphabet import get_alphabet
 
-alphabet = get_alphabet()
 
 def get_key(dic, value):
     for key, val in dic.items():
@@ -11,6 +10,7 @@ def get_key(dic, value):
     return None
 
 def get_bin_string(source):
+    alphabet = get_alphabet()
     bin_string = ""
     for c in source:
         if c != '=':

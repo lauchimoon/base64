@@ -1,8 +1,6 @@
 import sys
 from b64alphabet import get_alphabet
 
-alphabet = get_alphabet()
-
 def get_bin_string(source_string):
     bin_string = ""
 
@@ -38,6 +36,7 @@ def get_6bit_chunks(bin_string):
     return chunks
 
 def encode(source):
+    alphabet = get_alphabet()
     bin_string = get_bin_string(source)
     chunks = get_6bit_chunks(bin_string)
 
