@@ -8,4 +8,7 @@ aGVsbG8gd29ybGQ=                  # output
 
 Decoder
 ---
-Coming soon :)
+```
+$ python3 decode.py "aGVsbG8gd29ybGQ="
+hello world                       # output
+```
