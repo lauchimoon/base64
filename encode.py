@@ -37,7 +37,10 @@ def get_6bit_chunks(bin_string):
 
     return chunks
 
-def encode(chunks):
+def encode(source):
+    bin_string = get_bin_string(source)
+    chunks = get_6bit_chunks(bin_string)
+
     encoded = ""
     for chunk in chunks:
         encoded += alphabet[chunk]
@@ -50,10 +53,7 @@ def main():
         exit(1)
 
     source = sys.argv[1]
-    bin_string = get_bin_string(source)
-
-    chunks = get_6bit_chunks(bin_string)
-    encoded = encode(chunks)
+    encoded = encode(source)
     print(encoded)
 
 if __name__ == '__main__':
